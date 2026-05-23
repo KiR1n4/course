@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельное образование (СРС) — CG-SelfStudy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --accent-color: #4f46e5;
+            --border-color: #cbd5e1;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container { max-width: 840px; margin: 0 auto; }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--accent-color); }
+
+        .srs-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .meta-badge {
+            display: inline-block;
+            background-color: #f1f5f9;
+            color: #475569;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        p { margin-bottom: 16px; text-align: justify; color: #334155; }
+
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .req-item {
+            background-color: #fafafa;
+            border: 1px dashed var(--border-color);
+            padding: 16px;
+            border-radius: var(--radius-sm);
+        }
+
+        .req-item strong { display: block; margin-bottom: 4px; color: var(--accent-color); }
+
+        .source-list { padding-left: 20px; margin-bottom: 16px; }
+        .source-list li { margin-bottom: 6px; }
+
+        @media (max-width: 640px) {
+            .srs-card { padding: 24px; }
+            .requirements-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Вернуться к путеводителю</a>
+
+        <article class="srs-card">
+            <div class="meta-badge">Материалы для СРС</div>
+            <h1>Развитие компьютерной графики. Области применения компьютерной графики. Виды компьютерной графики.</h1>
+            
+            <h2>Теоретический обзор задания</h2>
+            <p>Данная тема самостоятельного обучения направлена на глубокое изучение исторических этапов формирования компьютерной графики, начиная с первых векторных дисплеев и заканчивая современными нейросетевыми технологиями генерации изображений.</p>
+
+            <h2>Задание для выполнения студентом</h2>
+            <p>Студенту необходимо подготовить аналитическую презентацию (10-12 слайдов) или реферат, подробно раскрывающий классические сферы применения графики (научная, деловая, конструкторская, иллюстративная, анимационная и веб-графика).</p>
+
+            <div class="requirements-grid">
+                <div class="req-item">
+                    <strong>Формат сдачи:</strong>
+                    Файл презентации (.PPTX / .PDF) или ссылка на интерактивный документ.
+                </div>
+                <div class="req-item">
+                    <strong>Критерии оценки:</strong>
+                    Полнота раскрытия каждого вида графики, наличие визуальных примеров, структурированность.
+                </div>
+            </div>
+
+            <h2>Рекомендуемые источники информации</h2>
+            <ul class="source-list">
+                <li>Петров М. Н. Компьютерная графика. Учебник для вузов.</li>
+                <li>Официальные методические материалы Высшей школы точных наук ТГПУ.</li>
+                <li>Открытые профильные архитектурные и веб-ресурсы, посвященные современному CG-дизайну.</li>
+            </ul>
+        </article>
+    </div>
+
+<script>
+        // 1. Блокировка правой кнопки мыши (контекстного меню)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 2. Блокировка горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', function(e) {
+            // Запрет Ctrl+C (Копировать)
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86)) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+U (Просмотр кода страницы)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+S (Сохранить страницу)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+            }
+            // Запрет F12 (Инструменты разработчика)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

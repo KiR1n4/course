@@ -1,0 +1,347 @@
+/* ==========================================================================
+   ОБЩИЕ СТИЛИ И ЗАЩИТА ДЛЯ ЛЕКЦИЙ КУРСА CG-SelfStudy
+   ========================================================================== */
+
+:root {
+    --bg-page: #f8fafc;
+    --bg-card: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --accent-color: #4f46e5;
+    --border-color: #cbd5e1;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+    
+    /* Брендовые цвета методических блоков */
+    --bg-analogy: rgba(249, 115, 22, 0.04);
+    --border-analogy: rgba(249, 115, 22, 0.3);
+    --text-analogy: #c2410c;
+    
+    --bg-fact: rgba(16, 185, 129, 0.04);
+    --border-fact: rgba(16, 185, 129, 0.3);
+    --text-fact: #047857;
+    /* Новые уникальные цвета для следующих методических блоков */
+    --bg-metaphor-new: rgba(79, 70, 229, 0.04);     /* Пастельный индиго */
+    --border-metaphor-new: rgba(79, 70, 229, 0.3);
+    --text-metaphor-new: #4f46e5;
+
+    --bg-warning-new: rgba(239, 68, 68, 0.04);       /* Пастельный красный */
+    --border-warning-new: rgba(239, 68, 68, 0.3);
+    --text-warning-new: #b91c1c;
+
+    --bg-note-new: rgba(100, 116, 139, 0.04);        /* Пастельный серый */
+    --border-note-new: rgba(100, 116, 139, 0.3);
+    --text-note-new: #475569;
+}
+
+/* Полный превентивный запрет выделения контента на уровне CSS */
+*, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* Кнопка возврата */
+.content-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+    transition: color 0.2s;
+}
+.content-link:hover { 
+    color: var(--accent-color); 
+}
+
+/* Карта лекции */
+.lecture-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 50px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.meta-info {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-color);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Типографика */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.3;
+    margin-bottom: 28px;
+    color: var(--text-main);
+}
+
+h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-top: 38px;
+    margin-bottom: 16px;
+    color: var(--text-main);
+    border-left: 4px solid var(--accent-color);
+    padding-left: 12px;
+}
+
+h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+p { 
+    margin-bottom: 16px; 
+    text-align: justify; 
+    color: #334155; 
+    font-size: 1.05rem;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 16px;
+    color: #334155;
+    font-size: 1.05rem;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Блоки аналогий [ДЛЯ НОВИЧКОВ] */
+.analogy-box {
+    background-color: var(--bg-analogy);
+    border: 1px solid var(--border-analogy);
+    border-left: 4px solid #f97316;
+    padding: 20px;
+    border-radius: var(--radius-sm);
+    margin: 24px 0;
+}
+.analogy-box strong {
+    color: var(--text-analogy);
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Блоки интересных фактов и примеров */
+.fact-box {
+    background-color: var(--bg-fact);
+    border: 1px solid var(--border-fact);
+    border-left: 4px solid #10b981;
+    padding: 20px;
+    border-radius: var(--radius-sm);
+    margin: 24px 0;
+}
+.fact-box strong {
+    color: var(--text-fact);
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Новый блок: [МЕТАФОРА] (Использует индиго цвет) */
+.metaphor-box {
+    background-color: var(--bg-metaphor-new);
+    border: 1px solid var(--border-metaphor-new);
+    border-left: 4px solid #4f46e5;
+    padding: 20px;
+    border-radius: var(--radius-sm);
+    margin: 24px 0;
+}
+.metaphor-box strong {
+    color: var(--text-metaphor-new);
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Новые стили для оформления интерактивных блоков лекции */
+
+/* 1. Блок для Лайфхаков (Фиолетовая палитра) */
+.hack-box {
+    background-color: #f3f0ff;          /* Очень мягкий фиолетовый фон */
+    border-left: 5px solid #7048e8;     /* Яркий фиолетовый маркер слева */
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(112, 72, 232, 0.05);
+}
+
+.hack-box strong {
+    color: #5f3dc4;                     /* Темно-фиолетовый заголовок */
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.05em;
+}
+
+.hack-box p, .hack-box ul, .hack-box ol {
+    margin: 5px 0;
+    color: #2b2b2b;
+}
+
+/* 2. Блок для Жизненных кейсов (Сине-голубая палитра) */
+.case-box {
+    background-color: #eef2f7;          /* Мягкий серо-синий фон */
+    border-left: 5px solid #2b6cb0;     /* Насыщенный синий маркер решения проблем */
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(43, 108, 176, 0.05);
+}
+
+.case-box strong {
+    color: #2c5282;                     /* Темно-синий заголовок */
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.05em;
+}
+
+.case-box p {
+    margin: 8px 0;
+    color: #2b2b2b;
+}
+
+/* Таймлайн истории */
+.timeline {
+    margin-top: 24px;
+    border-left: 2px solid var(--border-color);
+    padding-left: 24px;
+}
+.timeline-item {
+    margin-bottom: 32px;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -31px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+/* Сетки для карточек оборудования (CPU/GPU) */
+.tech-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+}
+.tech-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+    border-radius: var(--radius-sm);
+}
+.tech-card strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--accent-color);
+}
+
+/* Интерактивные таблицы спецификаций */
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 0.95rem;
+}
+.spec-table th {
+    background-color: #0f172a;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+}
+.spec-table td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+}
+.spec-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Контейнеры для графики и SVG */
+.image-container {
+    text-align: center;
+    margin: 32px 0;
+    background-color: #ffffff;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+}
+.image-caption {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+code {
+    background: #e2e8f0; 
+    padding: 2px 6px; 
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.95rem;
+    color: #0f172a;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .tech-grid { grid-template-columns: 1fr; }
+    .spec-table { display: block; overflow-x: auto; }
+}
+
+@media (max-width: 640px) {
+    .lecture-card { padding: 24px; }
+    h1 { font-size: 1.75rem; }
+    body { padding: 20px 10px; }
+}
+
+/* Чтобы на телефонах таблица не ломала экран, добавляем скролл */
+@media (max-width: 768px) {
+    .spec-table {
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+    }
+}

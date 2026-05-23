@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG-SelfStudy — Интерактивный путеводитель</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">CG</span>-SelfStudy
+            </a>
+            <nav class="main-nav">
+                <a href="#hero" class="nav-link">Главная</a>
+                <a href="#mod-1" class="nav-link">Модуль 1</a>
+                <a href="#mod-2" class="nav-link">Модуль 2</a>
+                <a href="#mod-3" class="nav-link">Модуль 3</a>
+                <a href="#mod-4" class="nav-link">Модуль 4</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <span class="badge">Интерактивный модульно-тематический путеводитель</span>
+                <h1 class="hero-title">Компьютерная графика</h1>
+                <p class="hero-subtitle">
+                    Цифровой образовательный ресурс для самостоятельного изучения. Полный курс распределен по
+                    тематическим модулям, объединяющим теоретические лекции, практические работы и материалы для СРС.
+                </p>
+            </div>
+        </section>
+
+        <section id="mod-1" class="module-section section-theory-base">
+            <div class="container">
+                <div class="module-badge">Тематический модуль 1</div>
+                <h2 class="section-title">Теоретические основы компьютерной графики</h2>
+                <p class="section-desc">Изучение базовых концепций графики, видов визуализации и фундаментальных
+                    физико-математических цветовых моделей.</p>
+
+                <div class="theme-grid">
+                    <div class="theme-block lectures-block">
+                        <h3>Лекционные занятия</h3>
+                        <div class="item-list">
+                            <div class="sub-item">
+                                <a href="lectures/lecture-01.html" class="content-link" target="_blank">Введение.
+                                    Развитие компьютерной графики. Области применения компьютерной графики.</a>
+                            </div>
+                            <div class="sub-item">
+                                <a href="lectures/lecture-02.html" class="content-link" target="_blank">Виды
+                                    компьютерной графики. Цветовые модели.</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="theme-block practices-block">
+                        <h3>Практические занятия</h3>
+                        <ul class="bullet-list">
+                            <li><a href="practices/practice-01.html" class="content-link" target="_blank">Работа с
+                                    простыми графическими редакторами</a></li>
+                            <li><a href="practices/practice-02.html" class="content-link" target="_blank">Создание
+                                    простых графических изображений с помощью computer графических редакторов.</a></li>
+                            <li><a href="practices/practice-03.html" class="content-link" target="_blank">Создание
+                                    простого графика на основе научных графиков.</a></li>
+                            <li><a href="practices/practice-04.html" class="content-link" target="_blank">Работа с
+                                    текстом в простых растровых изображениях</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="theme-block srs-block">
+                        <h3>Самостоятельное образование (СРС)</h3>
+                        <div class="checklist">
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <a href="srs/srs-01.html" class="content-link" target="_blank">Развитие компьютерной
+                                    графики. Области применения компьютерной графики. Виды компьютерной графики.</a>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Создание презентации о программах для работы с двухмерной и
+                                    трехмерной графикой. Рассмотрение концепции растровой, векторной и фрактальной
+                                    графики, а также возможности программ для работы с растровой, векторной и
+                                    фрактальной графикой.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Цветовые модели. Определение различия между цветовыми
+                                    моделями SMYK, RGB, HSB и LBP, а также роль цветовых моделей в графических
+                                    редакторах.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mod-2" class="module-section section-ps">
+            <div class="container">
+                <div class="module-badge ps-badge">Тематический модуль 2</div>
+                <h2 class="section-title">Инструментарий растровой графики (Adobe Photoshop)</h2>
+                <p class="section-desc">Освоение интерфейса растрового редактора, приемов выделения, обработки,
+                    фотомонтажа и фильтрации изображений.</p>
+
+                <div class="theme-grid">
+                    <div class="theme-block lectures-block">
+                        <h3>Лекционные занятия</h3>
+                        <div class="item-list">
+                            <div class="sub-item">
+                                <a href="lectures/lecture-03.html" class="content-link" target="_blank">Графический
+                                    редактор Adobe Photoshop.</a>
+                            </div>
+                            <div class="sub-item">
+                                <a href="lectures/lecture-04.html" class="content-link" target="_blank">Основы работы с
+                                    текстом в Adobe Photoshop. Фильтры в Adobe Photoshop и их использование.</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="theme-block practices-block">
+                        <h3>Практические занятия</h3>
+                        <ul class="bullet-list">
+                            <li><a href="practices/practice-05.html" class="content-link" target="_blank">Способы
+                                    настройки интерфейса Adobe Photoshop</a></li>
+                            <li><a href="practices/practice-06.html" class="content-link" target="_blank">Работа с
+                                    панелью инструментов Adobe Photoshop</a></li>
+                            <li><a href="practices/practice-07.html" class="content-link" target="_blank">Работа с
+                                    цветами в Adobe Photoshop</a></li>
+                            <li><a href="practices/practice-08.html" class="content-link" target="_blank">Обработка
+                                    изображений in Adobe Photoshop</a></li>
+                            <li><a href="practices/practice-09.html" class="content-link" target="_blank">Выделение
+                                    частей изображения в Adobe Photoshop</a></li>
+                            <li><a href="practices/practice-10.html" class="content-link" target="_blank">Создание
+                                    простых изображений в Adobe Photoshop</a></li>
+                            <li><a href="practices/practice-11.html" class="content-link" target="_blank">Выполнение
+                                    манипуляций с изображениями в Adobe Photoshop</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="theme-block srs-block">
+                        <h3>Самостоятельное образование (СРС)</h3>
+                        <div class="checklist">
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Изучения возможности графического редактора Adobe Photoshop
+                                    и его отличия от других графических редакторов.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Основы работы со слоями в Adobe Photoshop, создание
+                                    изображений формата 3:4 на тему коллажа, фотомонтажа и разработка различных коллажей
+                                    с использованием изображений.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Основы работы с текстом в Adobe Photoshop.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mod-3" class="module-section section-cd">
+            <div class="container">
+                <div class="module-badge cd-badge">Тематический модуль 3</div>
+                <h2 class="section-title">Векторное моделирование в Corel Draw</h2>
+                <p class="section-desc">Изучение рабочей среды векторного пакета, панелей инструментов, диспетчера слоев
+                    и механизмов импорта/экспорта.</p>
+
+                <div class="theme-grid">
+                    <div class="theme-block lectures-block">
+                        <h3>Лекционные занятия</h3>
+                        <div class="item-list">
+                            <div class="sub-item">
+                                <a href="lectures/lecture-05.html" class="content-link" target="_blank">Программа Corel
+                                    Draw и ее роли в векторной графике, рабочая среда программы.</a>
+                            </div>
+                            <div class="sub-item">
+                                <a href="lectures/lecture-06.html" class="content-link" target="_blank">Панель
+                                    управления Corel Draw. Панель инструментов Corel Draw.</a>
+                            </div>
+                            <div class="sub-item">
+                                <a href="lectures/lecture-07.html" class="content-link" target="_blank">Работа с цветами
+                                    в Corel Draw.</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="theme-block practices-block">
+                        <h3>Практические занятия</h3>
+                        <ul class="bullet-list">
+                            <li><a href="practices/practice-12.html" class="content-link" target="_blank">Знакомство с
+                                    интерфейсом программы CorelDraw.</a></li>
+                            <li><a href="practices/practice-13.html" class="content-link" target="_blank">Работа с
+                                    панелью инструментов CorelDraw</a></li>
+                            <li><a href="practices/practice-14.html" class="content-link" target="_blank">Работа с
+                                    цветами в CorelDraw</a></li>
+                            <li><a href="practices/practice-15.html" class="content-link" target="_blank">Работа с
+                                    текстом в CorelDraw</a></li>
+                            <li><a href="practices/practice-16.html" class="content-link" target="_blank">Работа со
+                                    слоями в CorelDraw</a></li>
+                            <li><a href="practices/practice-17.html" class="content-link" target="_blank">Изменение
+                                    форматов изображений в CorelDraw</a></li>
+                            <li><a href="practices/practice-18.html" class="content-link" target="_blank">Выполнение
+                                    операций импорта и экспорта объектов в CorelDraw.</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="theme-block srs-block">
+                        <h3>Самостоятельное образование (СРС)</h3>
+                        <div class="checklist">
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Программа Corel Draw и ее роли в векторной графике, а также
+                                    рабочая среда программы.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Панель управления Corel Draw. Панель инструментов Corel
+                                    Draw.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Работа со слоями в Corel Draw.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Подведение итог всей работы, проделанной в Adobe Photoshop
+                                    и Corel Draw, и создание презентаций в PowerPoint.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mod-4" class="module-section section-ai">
+            <div class="container">
+                <div class="module-badge ai-badge">Тематический модуль 4</div>
+                <h2 class="section-title">Векторный дизайн в Adobe Illustrator</h2>
+                <p class="section-desc">Проектирование контуров, кистей-перьев, выполнение тоновой коррекции, разработка
+                    веб-элементов и защита Digimarc.</p>
+
+                <div class="theme-grid">
+                    <div class="theme-block lectures-block">
+                        <h3>Лекционные занятия</h3>
+                        <div class="item-list">
+                            <div class="sub-item">
+                                <a href="lectures/lecture-08.html" class="content-link" target="_blank">Основные понятия
+                                    Adobe Illustrator. Рабочая среда программы.</a>
+                            </div>
+                            <div class="sub-item">
+                                <a href="lectures/lecture-09.html" class="content-link" target="_blank">Инструменты в
+                                    Adobe Illustrator. Цветокоррекция и тоновая коррекция в Adobe Illustrator.</a>
+
+                            </div>
+                            <div class="sub-item">
+                                <a href="lectures/lecture-10.html" class="content-link" target="_blank">Рисование в
+                                    Adobe Illustrator. Сохранение и экспорт изображений в Adobe Illustrator.</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="theme-block practices-block">
+                        <h3>Практические занятия</h3>
+                        <ul class="bullet-list">
+                            <li><a href="practices/practice-19.html" class="content-link" target="_blank">Знакомство с
+                                    интерфейсом программы Adobe Illustrator.</a></li>
+                            <li><a href="practices/practice-20.html" class="content-link" target="_blank">Работа с
+                                    панели инструментов Adobe Illustrator</a></li>
+                            <li><a href="practices/practice-21.html" class="content-link" target="_blank">Функции меню
+                                    программы Adobe Illustrator</a></li>
+                            <li><a href="practices/practice-22.html" class="content-link" target="_blank">Работа с
+                                    геометрическими фигурами в Adobe Illustrator</a></li>
+                            <li><a href="practices/practice-23.html" class="content-link" target="_blank">Выполнение
+                                    операций с использованием параметров группы инструментов «Текст» в Adobe
+                                    Illustrator.</a></li>
+                            <li><a href="practices/practice-24.html" class="content-link" target="_blank">Создание
+                                    спецэффектов для текста в Adobe Illustrator.</a></li>
+                            <li><a href="practices/practice-25.html" class="content-link" target="_blank">Область
+                                    сохранения и печати файлов в Adobe Illustrator</a></li>
+                            <li><a href="practices/practice-26.html" class="content-link" target="_blank">Способы работы
+                                    с контурами в Adobe Illustrator</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="theme-block srs-block">
+                        <h3>Самостоятельное образование (СРС)</h3>
+                        <div class="checklist">
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Основные понятия Adobe Illustrator. Рабочая среда
+                                    программы.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Создание спецэффектов с помощью инструментов Adobe
+                                    Illustrator.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Коррекция цвета и тона в Adobe Illustrator.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Работа с инструментами ретуширования и преобразованиями в
+                                    Adobe Illustrator.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Работа с цветами и слоями в графических объектах в Adobe
+                                    Illustrator.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Рисование в Adobe Illustrator. Рисунки для различных
+                                    веб-сайтов в Adobe Illustrator.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Работа с фильтрами в Adobe Illustrator.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Создание разнообразных логотипов, используя возможности
+                                    Adobe Illustrator.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Сохранение и экспорт изображений в Adobe Illustrator,
+                                    создание разнообразных 3D-фигур путем применения эффектов к различным
+                                    объектам.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="srs-checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="checklist-text">Подведение итогов всей проделанной работы в Adobe
+                                    Illustrator и создание презентации в PowerPoint.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 «CG-SelfStudy» — Интерактивный модульный комплекс</p>
+            <p>Высшая школа точных наук • Направление: Профессиональное образование (ИСТ) • ТГПУ имени Низами</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        // 1. Блокировка правой кнопки мыши (контекстного меню)
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // 2. Блокировка горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', function (e) {
+            // Запрет Ctrl+C (Копировать)
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86)) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+U (Просмотр кода страницы)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+S (Сохранить страницу)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+            }
+            // Запрет F12 (Инструменты разработчика)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+</body>
+
+</html>

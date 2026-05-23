@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическое задание №19. Знакомство с интерфейсом программы Adobe Illustrator — CG-SelfStudy
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/lecture-style.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+</head>
+
+<body>
+
+    <div class="toc-overlay" id="tocOverlay"></div>
+
+    <div class="practice-layout">
+
+        <main class="practice-main-content">
+            <a href="../index.html" class="content-link">← Вернуться к путеводителю</a>
+
+            <div class="container">
+
+                <article class="practice-card">
+                    <!-- Практическое задание №19: Знакомство с интерфейсом программы Adobe Illustrator -->
+<section id="practice-19">
+    <h3>Практическое задание №19. Знакомство с интерфейсом программы Adobe Illustrator</h3>
+    <p><strong>Тема:</strong> Основы работы с интерфейсом векторного графического редактора.</p>
+
+    <h4>Учебные элементы:</h4>
+    <ul>
+        <li><strong>Инструмент «Линия»:</strong> формирование пиксельной матрицы объектов вручную при помощи фиксации углов наклона.</li>
+        <li><strong>Инструмент «Заливка»:</strong> обработка замкнутых растровых областей, контроль герметичности контура на однослойном холсте.</li>
+        <li><strong>Инструмент «Выделение»:</strong> попиксельное оперирование фрагментами, дублирование и позиционирование в режиме «Прозрачное выделение».</li>
+    </ul>
+
+    <h4>Порядок выполнения работы:</h4>
+    <p>Вам необходимо воссоздать композицию из эталонного файла, пройдя четыре шага:</p>
+    
+    <h4>Шаг 1: Отрисовка базового изометрического модуля</h4>
+    <ol>
+        <li>Задайте размер холста: 1000х600 пикселей.</li>
+        <li>Инструментом «Линия» (черный цвет, толщина 1px) при зажатой клавише <strong>Shift</strong> нарисуйте один куб в изометрической проекции.</li>
+        <li>Разделите грани по тону для создания объема: 
+            <ul>
+                <li>Верхняя грань: светло-желтый.</li>
+                <li>Левая грань: ярко-желтый.</li>
+                <li>Правая грань: темно-желтый.</li>
+            </ul>
+        </li>
+        <li>Выполните окрашивание инструментом «Заливка».</li>
+    </ol>
+
+    <h4>Шаг 2: Сборка фигуры «Крест»</h4>
+    <ol>
+        <li>Включите режим «Прозрачное выделение» в настройках инструмента выделения.</li>
+        <li>Выделите базовый куб, зажмите <strong>Ctrl</strong> и скопируйте его.</li>
+        <li>Соберите левую верхнюю фигуру из задания.</li>
+        <li><strong>Правило растра:</strong> Совмещайте черные границы кубов «пиксель в пиксель», двигаясь от дальних блоков к ближним.</li>
+    </ol>
+
+    <h4>Шаг 3: Сборка фигуры «Стул»</h4>
+    <ol>
+        <li>Клонируйте базовый куб, чтобы собрать левую нижнюю фигуру.</li>
+        <li>Соблюдайте послойную логику: спинка (дальний план) → сиденье (средний план) → передние ножки (ближний план).</li>
+        <li>Проверьте наличие сквозных просветов под сиденьем.</li>
+    </ol>
+
+    <h4>Шаг 4: Сборка фигуры «Полый куб с отверстиями»</h4>
+    <ol>
+        <li>Нижний уровень: сплошная платформа 3х3.</li>
+        <li>Средний уровень: укладка кубов по периметру с пропусками в центре (оконца).</li>
+        <li>Верхний уровень: перекрытие крыши с сохранением центрального отверстия.</li>
+    </ol>
+
+    <div class="checklist">
+        <h4>Критерии технического контроля (Чек-лист):</h4>
+        <input type="checkbox"> Слитность сетки (черные линии строго 1px, без двойных контуров).<br>
+        <input type="checkbox"> Изоляция цвета (отсутствие «белых» пикселей на стыках, краска не вытекает).<br>
+        <input type="checkbox"> Геометрия (точность сквозных просветов и пустот).<br>
+        <input type="checkbox"> Экспорт в формат PNG.
+    </div>
+</section>
+
+                </article>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const toc = document.getElementById('lectureToc');
+            const toggleBtn = document.getElementById('tocToggleBtn');
+            const closeBtn = document.getElementById('closeTocBtn');
+            const overlay = document.getElementById('tocOverlay');
+
+            function openMobileToc() {
+                toc.classList.add('open');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMobileToc() {
+                toc.classList.remove('open');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            toggleBtn.addEventListener('click', openMobileToc);
+            closeBtn.addEventListener('click', closeMobileToc);
+            overlay.addEventListener('click', closeMobileToc);
+
+            document.querySelectorAll('.toc-link').forEach(link => {
+                link.addEventListener('click', closeMobileToc);
+            });
+
+            // Умный Scrollspy (подсветка при прокрутке)
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    const tocLink = document.querySelector(`.toc-link[href="#${id}"]`);
+
+                    if (entry.intersectionRatio > 0) {
+                        document.querySelectorAll('.toc-link').forEach(link => link.classList.remove('active'));
+                        if (tocLink) tocLink.classList.add('active');
+                    }
+                });
+            }, { rootMargin: '-40px 0px -60% 0px' });
+
+            document.querySelectorAll('h2[id]').forEach((section) => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 83)) e.preventDefault();
+            if (e.keyCode === 123) e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
