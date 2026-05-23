@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лекция:  — CG-SelfStudy
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lecture-style.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+</head>
+
+<body>
+
+    <button class="mobile-toc-toggle" id="tocToggleBtn">
+        📋 Содержание
+    </button>
+
+    <div class="toc-overlay" id="tocOverlay"></div>
+
+    <div class="lecture-layout">
+
+        <main class="lecture-main-content">
+            <a href="../index.html" class="content-link">← Вернуться к путеводителю</a>
+
+            <div class="container">
+
+                <article class="lecture-card">
+                    <div class="meta-info">Лекционное занятие </div>
+                    <h1>Лекция: </h1>
+
+
+
+                </article>
+            </div>
+
+        </main>
+
+        <aside class="lecture-toc" id="lectureToc">
+            <div class="mobile-toc-header">
+                <div class="toc-title">Содержание лекции</div>
+                <button class="close-toc-btn" id="closeTocBtn">✕</button>
+            </div>
+            <nav>
+                <ul class="toc-list">
+                    <li><a href="#sec1" class="toc-link active">1. История развития компьютерной графики</a></li>
+                    <li><a href="#sec2" class="toc-link">2. Концепция компьютерной графики</a></li>
+                    <li><a href="#sec3" class="toc-link">3. Векторная графика</a></li>
+                    <li><a href="#sec4" class="toc-link">4. Области применения компьютерной графики</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const toc = document.getElementById('lectureToc');
+            const toggleBtn = document.getElementById('tocToggleBtn');
+            const closeBtn = document.getElementById('closeTocBtn');
+            const overlay = document.getElementById('tocOverlay');
+
+            function openMobileToc() {
+                toc.classList.add('open');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMobileToc() {
+                toc.classList.remove('open');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            toggleBtn.addEventListener('click', openMobileToc);
+            closeBtn.addEventListener('click', closeMobileToc);
+            overlay.addEventListener('click', closeMobileToc);
+
+            document.querySelectorAll('.toc-link').forEach(link => {
+                link.addEventListener('click', closeMobileToc);
+            });
+
+            // Умный Scrollspy (подсветка при прокрутке)
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    const tocLink = document.querySelector(`.toc-link[href="#${id}"]`);
+
+                    if (entry.intersectionRatio > 0) {
+                        document.querySelectorAll('.toc-link').forEach(link => link.classList.remove('active'));
+                        if (tocLink) tocLink.classList.add('active');
+                    }
+                });
+            }, { rootMargin: '-40px 0px -60% 0px' });
+
+            document.querySelectorAll('h2[id]').forEach((section) => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 83)) e.preventDefault();
+            if (e.keyCode === 123) e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

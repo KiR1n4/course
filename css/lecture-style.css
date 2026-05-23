@@ -325,23 +325,22 @@ code {
     color: #0f172a;
 }
 
-/* Адаптивность для мобильных устройств */
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .lecture-layout { display: flex; flex-direction: column; }
+    #lectureToc { display: none; }
+    .toc-toggle-btn { display: block !important; }
+}
+
 @media (max-width: 768px) {
     .tech-grid { grid-template-columns: 1fr; }
-    .spec-table { display: block; overflow-x: auto; }
+    .spec-table { display: block; overflow-x: auto; white-space: normal; }
 }
 
 @media (max-width: 640px) {
-    .lecture-card { padding: 24px; }
+    body { padding: 10px; }
+    .lecture-card { padding: 16px; }
     h1 { font-size: 1.75rem; }
-    body { padding: 20px 10px; }
 }
 
-/* Чтобы на телефонах таблица не ломала экран, добавляем скролл */
-@media (max-width: 768px) {
-    .spec-table {
-        display: block;
-        overflow-x: auto;
-        white-space: normal;
-    }
-}
+img, video, .image-container { max-width: 100%; height: auto; }
