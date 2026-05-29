@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17. Самостоятельное образование (СРС) — CG-SelfStudy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lecture-style.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Вернуться к путеводителю</a>
+
+        <article class="srs-card">
+            <div class="meta-badge">Материалы для СРС</div>
+            <h1>Работа с фильтрами и динамическими эффектами в Adobe Illustrator. Принципы растрирования и стилизации векторов.</h1>
+            
+            <h2>Теоретический обзор задания</h2>
+            <p>Тема направлена на изучение функционала изменения внешнего вида объектов с помощью встроенных фильтров. Студенту необходимо изучить фундаментальное различие между векторными фильтрами (генерирующими новые координаты точек) и растровыми фильтрами из встроенного движка Photoshop (размытие, текстурирование, эскизы). Важно освоить управление разрешением растровых эффектов документа (Document Raster Effects Settings) для предотвращения пикселизации при экспорте.</p>
+
+            <h2>Задание для выполнения студентом</h2>
+            <p>Студенту необходимо подготовить аналитическую презентацию (10-12 слайдов). В материале следует наглядно продемонстрировать классификацию фильтров меню Эффекты, описать влияние растровых фильтров на производительность компьютера и алгоритм их окончательной фиксации через растрирование (Rasterize) или разбор оформления.</p>
+
+            <div class="requirements-grid">
+                <div class="req-item">
+                    <strong>Формат сдачи:</strong>
+                    Файл презентации (.PPTX / .PDF) с практическими примерами до/после применения фильтров стилизации.
+                </div>
+                <div class="req-item">
+                    <strong>Критерии оценки:</strong>
+                    Понимание природы растровых и векторных эффектов, точность описания настроек разрешения документа, логика структуры и визуальная грамотность.
+                </div>
+            </div>
+
+            <h2>Рекомендуемые источники информации</h2>
+            <ul class="source-list">
+                <li>Официальное руководство Adobe: Фильтры и эффекты в Illustrator.</li>
+                <li>Вайне К. Adobe Illustrator: Художественные фильтры и спецэффекты.</li>
+                <li>Методические указания к лабораторным работам Высшей школы точных наук.</li>
+            </ul>
+        </article>
+    </div>
+
+    <script>
+        // 1. Блокировка правой кнопки мыши (контекстного меню)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 2. Блокировка горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', function(e) {
+            // Запрет Ctrl+C (Копировать)
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86)) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+U (Просмотр кода страницы)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+S (Сохранить страницу)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+            }
+            // Запрет F12 (Инструменты разработчика)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

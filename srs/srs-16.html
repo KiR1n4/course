@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16. Самостоятельное образование (СРС) — CG-SelfStudy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lecture-style.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Вернуться к путеводителю</a>
+
+        <article class="srs-card">
+            <div class="meta-badge">Материалы для СРС</div>
+            <h1>Рисование в Adobe Illustrator. Принципы создания и экспорта графики для современных веб-сайтов.</h1>
+            
+            <h2>Теоретический обзор задания</h2>
+            <p>Тема посвящена изучению методологии рисования коммерческой векторной графики для веб-интерфейсов. Студенту необходимо освоить базовые инструменты создания иллюстраций (Перо, Кисти, Фигуры, Создание фигур), изучить концепцию пиксельной сетки (Pixel Grid Alignment) для исключения размытия линий на экранах, а также детально разобрать технические стандарты подготовки и оптимизации графики при экспорте в форматы SVG, PNG и WebP.</p>
+
+            <h2>Задание для выполнения студентом</h2>
+            <p>Студенту необходимо подготовить аналитическую презентацию (10-12 слайдов). В материале следует отразить классификацию веб-графики (иконки, баннеры, фоны, персонажные иллюстрации), описать особенности настройки документа под Web-стандарты и пошагово разобрать алгоритм экспорта интерактивного формата SVG с сохранением чистоты исходного кода.</p>
+
+            <div class="requirements-grid">
+                <div class="req-item">
+                    <strong>Формат сдачи:</strong>
+                    Файл презентации (.PPTX / .PDF) или ссылка на интерактивный макет с примерами разработанных веб-элементов.
+                </div>
+                <div class="req-item">
+                    <strong>Критерии оценки:</strong>
+                    Техническая грамотность описания веб-стандартов, глубина разбора инструментов рисования, структурированность материала и визуальная аккуратность.
+                </div>
+            </div>
+
+            <h2>Рекомендуемые источники информации</h2>
+            <ul class="source-list">
+                <li>Официальное руководство Adobe: Рисование с помощью инструментов Перо и Карандаш / Экспорт для экранов.</li>
+                <li>А. Кирсанов. Веб-графика и векторная иллюстрация: стандарты и оптимизация.</li>
+                <li>Электронная библиотека Высшей школы точных наук Национального педагогического университета.</li>
+            </ul>
+        </article>
+    </div>
+
+    <script>
+        // 1. Блокировка правой кнопки мыши (контекстного меню)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 2. Блокировка горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', function(e) {
+            // Запрет Ctrl+C (Копировать)
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86)) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+U (Просмотр кода страницы)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+S (Сохранить страницу)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+            }
+            // Запрет F12 (Инструменты разработчика)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

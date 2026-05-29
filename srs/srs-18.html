@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18. Самостоятельное образование (СРС) — CG-SelfStudy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lecture-style.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Вернуться к путеводителю</a>
+
+        <article class="srs-card">
+            <div class="meta-badge">Материалы для СРС</div>
+            <h1>Проектирование и создание разноплановых логотипов в Adobe Illustrator. Разработка знаков, леттеринг и модульные сетки.</h1>
+            
+            <h2>Теоретический обзор задания</h2>
+            <p>Тема посвящена изучению профессионального инструментария для разработки фирменных знаков и айдентики. Студенту необходимо освоить построение логотипов по строгим геометрическим канонам и пропорциям (золотое сечение, модульные сетки), изучить классификацию логотипов (шрифтовые, знаковые, комбинированные), а также детально разобрать перевод текстовых элементов в кривые (Create Outlines) для исключения искажений товарного знака на сторонних устройствах.</p>
+
+            <h2>Задание для выполнения студентом</h2>
+            <p>Студенту необходимо подготовить аналитическую презентацию (10-12 слайдов). В работе требуется раскрыть пошаговый алгоритм создания знака на основе эскиза, продемонстрировать использование панели Pathfinder (Обработка контуров) для деструктивного слияния форм и описать правила подготовки логотипа к передаче заказчику (микро-гайдлайн).</p>
+
+            <div class="requirements-grid">
+                <div class="req-item">
+                    <strong>Формат сдачи:</strong>
+                    Файл презентации (.PPTX / .PDF) с обязательным приложением исходного векторного файла логотипа (.AI / .SVG).
+                </div>
+                <div class="req-item">
+                    <strong>Критерии оценки:</strong>
+                    Техническая чистота векторных контуров макета, глубина теоретического описания инструментов построения, структурированность презентации и аккуратность оформления.
+                </div>
+            </div>
+
+            <h2>Рекомендуемые источники информации</h2>
+            <ul class="source-list">
+                <li>Дэвид Эйри. Логотип и фирменный стиль. Руководство дизайнера.</li>
+                <li>Официальный учебный курс Adobe: Проектирование фирменных знаков в Illustrator.</li>
+                <li>Методический фонд Высшей школы точных наук Национального педагогического университета.</li>
+            </ul>
+        </article>
+    </div>
+
+    <script>
+        // 1. Блокировка правой кнопки мыши (контекстного меню)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 2. Блокировка горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', function(e) {
+            // Запрет Ctrl+C (Копировать)
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86)) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+U (Просмотр кода страницы)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+S (Сохранить страницу)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+            }
+            // Запрет F12 (Инструменты разработчика)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

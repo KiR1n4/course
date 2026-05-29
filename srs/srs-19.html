@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19. Самостоятельное образование (СРС) — CG-SelfStudy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lecture-style.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Вернуться к путеводителю</a>
+
+        <article class="srs-card">
+            <div class="meta-badge">Материалы для СРС</div>
+            <h1>Сохранение и экспорт изображений. Проектирование и создание объемных 3D-фигур в Adobe Illustrator.</h1>
+            
+            <h2>Теоретический обзор задания</h2>
+            <p>Тема направлена на освоение двух критически важных блоков. Первый — изучение разницы между сохранением исходного рабочего файла (.AI, .EPS, .PDF) и экспортом оптимизированного контента для экранов (Экспорт для экранов, Экспорт как). Второй — изучение алгоритмов создания трехмерной графики средствами векторного редактора с помощью инструментов группы «3D и материалы» (Вытягивание, Вращение, Раздувание), а также наложение плоских векторных текстур на объемные модели.</p>
+
+            <h2>Задание для выполнения студентом</h2>
+            <p>Студенту необходимо подготовить аналитическую презентацию (10-12 слайдов). В работе важно детально классифицировать форматы сохранения векторов, описать пошаговый алгоритм создания сложной 3D-фигуры (например, кубка или шахматной фигуры) методом вращения плоского контура (Revolve) и зафиксировать правила финального рендеринга трехмерных сцен с трассировкой лучей.</p>
+
+            <div class="requirements-grid">
+                <div class="req-item">
+                    <strong>Формат сдачи:</strong>
+                    Файл презентации (.PPTX / .PDF) и готовый рендер трехмерной сцены, сохраненный в форматах SVG и PNG.
+                </div>
+                <div class="req-item">
+                    <strong>Критерии оценки:</strong>
+                    Техническое понимание алгоритмов экспорта, глубина описания параметров трехмерного моделирования (карта высот, материалы, свет), структурированность презентации.
+                </div>
+            </div>
+
+            <h2>Рекомендуемые источники информации</h2>
+            <ul class="source-list">
+                <li>Официальное руководство Adobe: Создание 3D-объектов и работа с материалами в Illustrator.</li>
+                <li>М. Бондаренко. Трехмерное моделирование и эффекты в векторных редакторах.</li>
+                <li>Учебно-методические публикации кафедры Информационных систем Национального педагогического университета.</li>
+            </ul>
+        </article>
+    </div>
+
+    <script>
+        // 1. Блокировка правой кнопки мыши (контекстного меню)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 2. Блокировка горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', function(e) {
+            // Запрет Ctrl+C (Копировать)
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86)) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+U (Просмотр кода страницы)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+S (Сохранить страницу)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+            }
+            // Запрет F12 (Инструменты разработчика)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13. Самостоятельное образование (СРС) — CG-SelfStudy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lecture-style.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Вернуться к путеводителю</a>
+
+        <article class="srs-card">
+            <div class="meta-badge">Материалы для СРС</div>
+            <h1>Коррекция цвета и тона в Adobe Illustrator.</h1>
+            
+            <h2>Теоретический обзор задания</h2>
+            <p>Данная тема самостоятельного обучения посвящена глубокому освоению колористических инструментов Adobe Illustrator. Студенту необходимо изучить разницу между цветовыми моделями RGB и CMYK в контексте векторной среды, освоить работу с глобальными образцами (Global Swatches), а также досконально разобрать уникальный инструмент «Редактирование цвета / Перекрасить графический объект» (Recolor Artwork), позволяющий мгновенно менять тональность сложных многоцветных иллюстраций.</p>
+
+            <h2>Задание для выполнения студентом</h2>
+            <p>Студенту необходимо подготовить аналитическую презентацию (10-12 слайдов). В работе важно детально раскрыть алгоритм изменения цветового баланса векторных макетов, описать процесс преобразования цветов из одной модели в другую (например, подготовку RGB-иллюстрации к печати в CMYK без критической потери яркости) и продемонстрировать использование встроенных гармоний и правил генерации цветовых схем.</p>
+
+            <div class="requirements-grid">
+                <div class="req-item">
+                    <strong>Формат сдачи:</strong>
+                    Файл презентации (.PPTX / .PDF) или ссылка на интерактивный графический отчет.
+                </div>
+                <div class="req-item">
+                    <strong>Критерии оценки:</strong>
+                    Полнота разбора инструмента Recolor Artwork, техническая точность описания допечатной подготовки цвета, структурированность материала и визуальная аккуратность.
+                </div>
+            </div>
+
+            <h2>Рекомендуемые источники информации</h2>
+            <ul class="source-list">
+                <li>Официальное руководство Adobe: Перекрашивание объектов в Illustrator.</li>
+                <li>Джеймс Данн. Руководство по управлению цветом в дизайне и полиграфии.</li>
+                <li>Электронный методический фонд Высшей школы точных наук Национального педагогического университета.</li>
+            </ul>
+        </article>
+    </div>
+
+    <script>
+        // 1. Блокировка правой кнопки мыши (контекстного меню)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 2. Блокировка горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', function(e) {
+            // Запрет Ctrl+C (Копировать)
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86)) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+U (Просмотр кода страницы)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+S (Сохранить страницу)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+            }
+            // Запрет F12 (Инструменты разработчика)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

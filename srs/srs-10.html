@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10. Самостоятельное образование (СРС) — CG-SelfStudy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lecture-style.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Вернуться к путеводителю</a>
+
+        <article class="srs-card">
+            <div class="meta-badge">Материалы для СРС</div>
+            <h1>Подведение итогов всей работы, проделанной в Adobe Photoshop и Corel Draw, и создание презентаций в PowerPoint.</h1>
+            
+            <h2>Теоретический обзор задания</h2>
+            <p>Заключительная тема самостоятельного обучения направлена на интеграцию всех полученных знаний в области растровой и векторной графики. Студенту необходимо систематизировать опыт работы с пиксельной графикой (Photoshop) и геометрическими объектами (CorelDRAW), а также освоить правила конвертации, экспорта графических ресурсов и их внедрения в мультимедийные презентации PowerPoint с соблюдением стандартов визуальной культуры.</p>
+
+            <h2>Задание для выполнения студентом</h2>
+            <p>Студенту необходимо подготовить комплексную отчетную презентацию (12-14 слайдов) в программе Microsoft PowerPoint. Презентация должна являться портфолио выполненных за семестр работ. В ней должны быть продемонстрированы: растровый коллаж/фотомонтаж, векторный макет (логотип или схема), а также описан личный технологический процесс их создания и экспорта.</p>
+
+            <div class="requirements-grid">
+                <div class="req-item">
+                    <strong>Формат сдачи:</strong>
+                    Готовый файл презентации (.PPTX) с внедренными графическими ресурсами высокого качества.
+                </div>
+                <div class="req-item">
+                    <strong>Критерии оценки:</strong>
+                    Техническое качество интеграции графики, единый визуальный стиль презентации, глубина аналитического отчета по выполненным работам, отсутствие пикселизации векторных элементов.
+                </div>
+            </div>
+
+            <h2>Рекомендуемые источники информации</h2>
+            <ul class="source-list">
+                <li>Робин Уильямс. Дизайн для недизайнеров. Книга о дизайне и типографике для презентаций.</li>
+                <li>Официальные руководства по интеграции продуктов Microsoft Office и графических пакетов.</li>
+                <li>Материалы выпускных квалификационных работ и практических экспериментов проекта CG-SelfStudy.</li>
+            </ul>
+        </article>
+    </div>
+
+    <script>
+        // 1. Блокировка правой кнопки мыши (контекстного меню)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 2. Блокировка горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', function(e) {
+            // Запрет Ctrl+C (Копировать)
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86)) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+U (Просмотр кода страницы)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+S (Сохранить страницу)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+            }
+            // Запрет F12 (Инструменты разработчика)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

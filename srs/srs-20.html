@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20. Самостоятельное образование (СРС) — CG-SelfStudy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lecture-style.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-link">← Вернуться к путеводителю</a>
+
+      <article class="srs-card">
+        <div class="meta-badge" style="background: #2e7d32; color: #fff">
+          Финальный модуль
+        </div>
+        <h1>
+          Подведение итогов работы в Adobe Illustrator и создание отчетной
+          презентации в PowerPoint
+        </h1>
+
+        <h2>Теоретический обзор задания</h2>
+        <p>
+          Заключительный этап обучения посвящен критическому анализу проделанной
+          работы и презентационным навыкам дизайнера. Студенты должны научиться
+          не просто экспортировать графику, а грамотно внедрять векторные
+          ресурсы в среду MS PowerPoint. В рамках модуля изучаются правила
+          сохранения прозрачности (альфа-каналов), особенности вставки
+          масштабируемого вектора (формат SVG, который Microsoft Office теперь
+          поддерживает нативно), а также композиционные законы верстки отчетных
+          слайдов без потери качества исходных иллюстраций.
+        </p>
+
+        <h2>Задание для выполнения студентом</h2>
+        <p>
+          Студенту необходимо собрать все практические работы, выполненные за
+          семестр в Adobe Illustrator, провести их ревизию и сформировать
+          комплексную отчетную презентацию в PowerPoint (12-15 слайдов). Каждый
+          слайд должен наглядно демонстрировать эволюцию навыков: от базовых
+          геометрических примитивов до сложных векторных паттернов, изометрии и
+          отрендерных 3D-объектов с текстурами. Обязательное условие —
+          интеграция элементов инфографики и схем, отрисованных вручную в
+          Illustrator.
+        </p>
+
+        <div class="requirements-grid">
+          <div class="req-item">
+            <strong>Формат сдачи:</strong>
+            Готовый файл итоговой презентации (.PPTX) и архив с исходными
+            мастер-файлами проектов (.AI).
+          </div>
+          <div class="req-item">
+            <strong>Критерии оценки:</strong>
+            Полнота представленных отчетов, качество интеграции векторов в
+            PowerPoint (отсутствие пикселизации), визуальная культура оформления
+            слайдов и четкость структурирования выводов.
+          </div>
+        </div>
+
+        <h2>Рекомендуемые источники информации</h2>
+        <ul class="source-list">
+          <li>
+            Инструкции Microsoft: Использование векторных изображений SVG в
+            приложениях Office.
+          </li>
+          <li>
+            В. Лаптев. Изобразительная статистика. Введение в инфографику.
+          </li>
+          <li>
+            Методические указания по подготовке выпускных квалификационных и
+            проектных работ студентов педагогических вузов.
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <script>
+      // 1. Блокировка правой кнопки мыши (контекстного меню)
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+
+      // 2. Блокировка горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+      document.addEventListener("keydown", function (e) {
+        // Запрет Ctrl+C (Копировать)
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86)) {
+          e.preventDefault();
+        }
+        // Запрет Ctrl+U (Просмотр кода страницы)
+        if (e.ctrlKey && e.keyCode === 85) {
+          e.preventDefault();
+        }
+        // Запрет Ctrl+S (Сохранить страницу)
+        if (e.ctrlKey && e.keyCode === 83) {
+          e.preventDefault();
+        }
+        // Запрет F12 (Инструменты разработчика)
+        if (e.keyCode === 123) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>

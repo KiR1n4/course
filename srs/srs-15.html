@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15. Самостоятельное образование (СРС) — CG-SelfStudy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lecture-style.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Вернуться к путеводителю</a>
+
+        <article class="srs-card">
+            <div class="meta-badge">Материалы для СРС</div>
+            <h1>Работа с цветами и слоями в графических объектах в Adobe Illustrator. Менеджмент структуры документа и управление заливками.</h1>
+            
+            <h2>Теоретический обзор задания</h2>
+            <p>Данная тема самостоятельного обучения направлена на глубокое изучение системной организации векторных файлов. Студенту необходимо освоить принципы иерархии панели «Слои» (Layers), где каждый контур является независимым подслоем, научиться группировать и изолировать объекты, а также детально разобрать типы заливок (однотонная, градиентная, сетчатая, узорная) и работу с палитрой «Образцы» (Swatches).</p>
+
+            <h2>Задание для выполнения студентом</h2>
+            <p>Студенту необходимо подготовить аналитическую презентацию (10-12 слайдов). В материале следует отразить логику организации сложного многослойного макета, правила именования и цветовой маркировки слоев, а также классифицировать способы окрашивания векторных объектов и управление непрозрачностью элементов.</p>
+
+            <div class="requirements-grid">
+                <div class="req-item">
+                    <strong>Формат сдачи:</strong>
+                    Файл презентации (.PPTX / .PDF) с обязательной демонстрацией скриншотов раскрытой панели слоев и палитры образцов.
+                </div>
+                <div class="req-item">
+                    <strong>Критерии оценки:</strong>
+                    Техническая точность классификации типов заливок, глубина раскрытия темы менеджмента слоев, структурированность отчета и дизайн самих слайдов.
+                </div>
+            </div>
+
+            <h2>Рекомендуемые источники информации</h2>
+            <ul class="source-list">
+                <li>Официальное руководство Adobe: Использование слоев в Illustrator / Управление цветом.</li>
+                <li>Пономаренко С. И. Профессиональный цвет и структура в векторной графике.</li>
+                <li>Лабораторные практикумы Высшей школы точных наук Национального педагогического университета.</li>
+            </ul>
+        </article>
+    </div>
+
+    <script>
+        // 1. Блокировка правой кнопки мыши (контекстного меню)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 2. Блокировка горячих клавиш (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', function(e) {
+            // Запрет Ctrl+C (Копировать)
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86)) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+U (Просмотр кода страницы)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+            }
+            // Запрет Ctrl+S (Сохранить страницу)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+            }
+            // Запрет F12 (Инструменты разработчика)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
