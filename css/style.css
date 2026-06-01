@@ -26,35 +26,30 @@ html {
 }
 
 body {
-    /* Ваша текущая настройка шрифтов и прочего */
-    background-image: url('../icons/IMG_2809.JPG'); /* Укажите путь к вашему файлу */
-    background-size: cover;          /* Растягивает изображение на весь экран */
-    background-position: center;     /* Центрирует изображение */
-    background-attachment: fixed;    /* Фиксирует фон при скролле */
+    background-image: url('../icons/IMG_2809.JPG'); 
+    background-size: cover;          
+    background-position: center;     
+    background-attachment: fixed;    
     background-repeat: no-repeat;
 
-font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-main);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    padding-top: 75px; 
 
-    /* Полный запрет выделения контента на всем сайте */
-
--webkit-user-select: none;  /* Safari */
-    -moz-user-select: none;     /* Firefox */
-    -ms-user-select: none;      /* IE10+ */
-    user-select: none;          /* Стандартный синтаксис для Chrome, Opera, Edge */
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none;          
 }
 
-
-/* Добавьте это к блокам, которые содержат основной текст */
 .container {
-    background: rgba(255, 255, 255, 0.579); /* Полупрозрачный белый фон (85%) */
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.579); 
     border-radius: var(--radius-md);
-    backdrop-filter: blur(5px);           /* Легкое размытие подложки для стиля */
-        width: 100%;
+    backdrop-filter: blur(5px);           
+    width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 24px;
@@ -80,17 +75,27 @@ font-family: 'Inter', sans-serif;
     max-width: 800px;
 }
 
-/* ШАПКА И НАВИГАЦИЯ */
+/* ==========================================================================
+   ОТРЕДАКТИРОВАНО: ШАПКА И МНОГОУРОВНЕВАЯ НАВИГАЦИЯ (БЕЗ ДУБЛИРОВАНИЯ)
+   ========================================================================== */
+
 .main-header {
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 0.9);
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #eef2f5;
+    font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
 .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,32 +103,223 @@ font-family: 'Inter', sans-serif;
 }
 
 .logo {
-    font-size: 1.25rem;
+    font-size: 22px;
     font-weight: 700;
-    color: var(--text-main);
+    color: #2c3e50;
     text-decoration: none;
 }
 
 .logo-accent {
-    color: var(--accent-color);
+    color: #4a90e2;
 }
 
-.main-nav {
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-list > li {
+    position: relative;
 }
 
 .nav-link {
+    color: #5a6c7d;
     text-decoration: none;
-    color: var(--text-muted);
     font-weight: 500;
-    font-size: 0.9rem;
-    transition: var(--transition-smooth);
+    font-size: 15px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.25s ease;
 }
 
 .nav-link:hover {
-    color: var(--accent-color);
+    color: #4a90e2;
 }
+
+.arrow {
+    font-size: 9px;
+    color: #95a5a6;
+    transition: transform 0.25s ease;
+}
+
+/* --- ПЕРВЫЙ УРОВЕНЬ: Выпадающий список категорий модуля --- */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 280px;
+    max-width: 360px;
+    width: max-content;
+    height: auto !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eef2f5;
+    border-radius: 8px;
+    padding: 6px 0 !important;
+    margin: 10px 0 0 0;
+    list-style: none;
+    z-index: 999;
+    
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+.sub-dropdown {
+    position: relative;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.sub-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    height: auto !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sub-toggle:hover {
+    background-color: #f4f7f9;
+    color: #4a90e2;
+}
+
+.sub-arrow {
+    font-size: 9px;
+    color: #bdc3c7;
+    transition: transform 0.2s ease;
+}
+
+.dropdown-menu > li:not(:last-child) {
+    border-bottom: 1px solid #f5f8fa;
+}
+
+/* --- ВТОРОЙ УРОВЕНЬ: Конкретные темы лекций / практик / СРС --- */
+.sub-dropdown-menu {
+    position: absolute;
+    top: -6px;
+    background-color: #ffffff;
+    min-width: 280px;
+    max-width: 380px; /* Немного увеличили максимальную ширину для лучшего баланса строк */
+    width: max-content;
+    height: auto !important;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eef2f5;
+    border-radius: 8px;
+    padding: 6px 0 !important;
+    margin: 0;
+    list-style: none;
+    z-index: 1000;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+
+    /* По умолчанию открываем вправо */
+    left: 100%;
+    right: auto;
+    margin-left: 5px;
+    transform: translateX(15px);
+}
+
+/* ДИНАМИЧЕСКИЙ КЛАСС: Автоматически разворачивает меню влево, если справа нет места */
+.sub-dropdown-menu.open-left {
+    left: auto !important;
+    right: 100% !important;
+    margin-left: 0;
+    margin-right: 5px;
+    transform: translateX(-15px);
+}
+
+.sub-dropdown-menu li {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+}
+
+/* Ссылки финальных страниц: полный сброс ограничений по строкам и высоте */
+.sub-dropdown-menu li a {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px 18px !important;
+    color: #555555;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.5 !important;
+    white-space: normal !important;   /* Разрешить автоперенос длинного текста */
+    word-wrap: break-word !important;  /* Защита от вылета длинных слов */
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sub-dropdown-menu li a:hover {
+    background-color: #f4f7f9;
+    color: #4a90e2;
+}
+
+/* --- ХОВЕР-ЛОГИКА РАСКРЫТИЯ МЕНЮ --- */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown:hover .nav-link {
+    color: #4a90e2;
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
+    color: #4a90e2;
+}
+
+/* Наведение на категорию: Показ конечных ссылок */
+.sub-dropdown:hover .sub-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0) !important;
+}
+
+.sub-dropdown:hover .sub-toggle {
+    background-color: #eef5fc;
+    color: #4a90e2;
+}
+
+/* Анимация стрелочек наведения */
+.sub-dropdown:hover .sub-arrow {
+    color: #4a90e2;
+}
+
+/* Динамическая анимация стрелочек: если меню открывается вправо, смещаем маркер вправо */
+.sub-dropdown:hover .sub-dropdown-menu:not(.open-left) ~ .sub-toggle .sub-arrow {
+    transform: translateX(3px);
+}
+
+/* Динамическая анимация стрелочек: если сработал умный разворот влево, разворачиваем и маркер */
+.sub-dropdown .sub-dropdown-menu.open-left ~ .sub-toggle .sub-arrow {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+.sub-dropdown:hover .sub-dropdown-menu.open-left ~ .sub-toggle .sub-arrow {
+    transform: rotate(180deg) translateX(3px);
+}
+
+/* ==========================================================================
+   КОНЕЦ ИЗМЕНЕНИЙ ШАПКИ. ДАЛЕЕ ВАШ ОРИГИНАЛЬНЫЙ КОД БЕЗ ИЗМЕНЕНИЙ
+   ========================================================================== */
 
 /* ГЛАВНЫЙ ЭКРАН */
 .hero-section {
@@ -202,7 +398,7 @@ font-family: 'Inter', sans-serif;
     border-bottom: 2px solid var(--bg-primary);
 }
 
-/* БЛОК ИНТЕРАКТИВНЫХ ССЫЛОК (ЕДИНЫЙ СТИЛЬ) */
+/* БЛОК ИНТЕРАКТИВНЫХ ССЫЛОК */
 .item-list {
     display: flex;
     flex-direction: column;
@@ -219,7 +415,6 @@ font-family: 'Inter', sans-serif;
     padding-bottom: 0;
 }
 
-/* Единый базовый стиль для всех ссылок на лекции и практики курса */
 .content-link {
     font-weight: 600;
     font-size: 0.95rem;
@@ -266,7 +461,6 @@ font-family: 'Inter', sans-serif;
     margin-bottom: 0;
 }
 
-/* Настройка шрифта для ссылок внутри списка практик */
 .bullet-list .content-link {
     font-size: 0.9rem;
 }
@@ -366,17 +560,16 @@ font-family: 'Inter', sans-serif;
 .section-ai .content-link:hover { color: var(--color-ai-light); }
 
 /* ПОДВАЛ */
-
 .main-footer {
-    background-color: transparent; /* Делаем фон секции прозрачным */
+    background-color: transparent; 
     padding: 32px 0;
     margin-top: 40px;
 }
 
 .main-footer .container {
-    background: rgba(255, 255, 255, 0.8); /* Полупрозрачная белая подложка */
+    background: rgba(255, 255, 255, 0.8); 
     backdrop-filter: blur(5px);
-    color: #0f172a; /* Темный текст для контраста на белом */
+    color: #0f172a; 
     padding: 20px;
     border-radius: var(--radius-md);
     text-align: center;
@@ -396,7 +589,6 @@ font-family: 'Inter', sans-serif;
     .srs-block { grid-column: span 1; }
 }
 
-/* При этом оставляем интерактивность для чекбоксов СРС и ссылок */
 a, input[type="checkbox"], label {
     -webkit-user-select: none;
     -moz-user-select: none;
