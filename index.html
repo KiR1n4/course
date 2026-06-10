@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+    <link rel="manifest" href="../icons/site.webmanifest" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navigation.css" />
   </head>
@@ -53,9 +57,7 @@
                   >
                   <ul class="sub-dropdown-menu">
                     <li>
-                      <a href="practices/practice-01.html"
-                        >Простые редакторы</a
-                      >
+                      <a href="practices/practice-01.html">Простые редакторы</a>
                     </li>
                     <li>
                       <a href="practices/practice-02.html"
@@ -63,14 +65,10 @@
                       >
                     </li>
                     <li>
-                      <a href="practices/practice-03.html"
-                        >Научные графики</a
-                      >
+                      <a href="practices/practice-03.html">Научные графики</a>
                     </li>
                     <li>
-                      <a href="practices/practice-04.html"
-                        >Работа с текстом</a
-                      >
+                      <a href="practices/practice-04.html">Работа с текстом</a>
                     </li>
                   </ul>
                 </li>
@@ -89,9 +87,7 @@
                       >
                     </li>
                     <li>
-                      <a href="srs/srs-03.html"
-                        >Различия цветовых моделей</a
-                      >
+                      <a href="srs/srs-03.html">Различия цветовых моделей</a>
                     </li>
                   </ul>
                 </li>
@@ -1029,16 +1025,16 @@
     </script>
 
     <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const subDropdowns = document.querySelectorAll('.sub-dropdown');
+      document.addEventListener("DOMContentLoaded", function () {
+        const subDropdowns = document.querySelectorAll(".sub-dropdown");
 
-    subDropdowns.forEach(dropdown => {
-        dropdown.addEventListener('mouseenter', function () {
-            const menu = this.querySelector('.sub-dropdown-menu');
+        subDropdowns.forEach((dropdown) => {
+          dropdown.addEventListener("mouseenter", function () {
+            const menu = this.querySelector(".sub-dropdown-menu");
             if (!menu) return;
 
             // Сначала сбрасываем класс, чтобы сделать честный замер вправо
-            menu.classList.remove('open-left');
+            menu.classList.remove("open-left");
 
             // Получаем координаты подменю на экране
             const rect = menu.getBoundingClientRect();
@@ -1046,11 +1042,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Если правый край меню уходит за ширину экрана, разворачиваем его влево
             if (rect.right > windowWidth) {
-                menu.classList.add('open-left');
+              menu.classList.add("open-left");
             }
+          });
         });
-    });
-});
-</script>
+      });
+    </script>
   </body>
 </html>

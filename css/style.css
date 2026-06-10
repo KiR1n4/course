@@ -595,3 +595,13 @@ a, input[type="checkbox"], label {
     -ms-user-select: none;
     user-select: none;
 }
+
+.pdf-container {
+    width: 100%;
+    max-width: 850px; /* Оптимальная ширина для компьютерных слайдов */
+    margin: 24px auto;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
+}

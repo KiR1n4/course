@@ -130,3 +130,37 @@
 .table-container th, .table-container td {
     border: 1px solid #eef0f2;
 }
+
+/* Контейнер для секции с видео */
+.video-section {
+    width: 100%;
+    max-width: 800px; /* Оптимальная ширина плеера на странице */
+    margin: 32px auto;
+}
+
+.video-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-main);
+}
+
+/* Адаптивная обертка для самого YouTube плеера */
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* Пропорции 16:9 (315 / 560 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--radius-md); /* Скругление углов в стиле вашего сайта */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
+}
+
+/* Заставляем iframe растянуться на 100% внутри нашей обертки */
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

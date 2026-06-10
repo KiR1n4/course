@@ -1,440 +1,436 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Практическое задание №2. Создание простых графических изображений —
-      CG-SelfStudy
-    </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/practice-style.css" />
-    <link rel="stylesheet" href="../css/navigation.css" />
-  </head>
 
-  <body>
-<header class="main-header">
-  <div class="container header-container">
-    <a href="../index.html" class="logo">
-      <span class="logo-accent">CG</span>-SelfStudy
-    </a>
-    
-    <nav class="main-nav">
-      <ul class="nav-list">
-        <li><a href="../index.html#hero" class="nav-link">Главная</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Практическое задание №2. Создание простых графических изображений —
+    CG-SelfStudy
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+  <link rel="manifest" href="../icons/site.webmanifest" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/practice-style.css" />
+  <link rel="stylesheet" href="../css/navigation.css" />
+</head>
 
-        <li class="dropdown">
-          <a href="../index.html#mod-1" class="nav-link dropdown-toggle">Модуль 1 <span class="arrow">▼</span></a>
-          <ul class="dropdown-menu">
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Теория (Лекции) <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../lectures/lecture-01.html">Развитие и области применения КГ</a></li>
-                <li><a href="../lectures/lecture-02.html">Виды графики и цветовые модели</a></li>
-              </ul>
-            </li>
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Практические занятия <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../practices/practice-01.html">Практика 1: Простые редакторы</a></li>
-                <li><a href="../practices/practice-02.html">Практика 2: Создание изображений</a></li>
-                <li><a href="../practices/practice-03.html">Практика 3: Научные графики</a></li>
-                <li><a href="../practices/practice-04.html">Практика 4: Работа с текстом</a></li>
-              </ul>
-            </li>
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Самостоятельная работа (СРС) <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../srs/srs-01.html">СРС 1: Развитие и виды КГ</a></li>
-                <li><a href="../srs/srs-02.html">СРС 2: Концепции графики (Презентация)</a></li>
-                <li><a href="../srs/srs-03.html">СРС 3: Различия цветовых моделей</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+<body>
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo">
+        <span class="logo-accent">CG</span>-SelfStudy
+      </a>
 
-        <li class="dropdown">
-          <a href="../index.html#mod-2" class="nav-link dropdown-toggle">Модуль 2 <span class="arrow">▼</span></a>
-          <ul class="dropdown-menu">
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Теория (Лекции) <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../lectures/lecture-03.html">Графический редактор Adobe Photoshop.</a></li>
-                <li><a href="../lectures/lecture-04.html">Основы работы с текстом и фильтры</a></li>
-              </ul>
-            </li>
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Практические занятия <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../practices/practice-05.html">Способы настройки интерфейса Adobe Photoshop</a></li>
-                <li><a href="../practices/practice-06.html">Работа с панелью инструментов Adobe Photoshop</a></li>
-                <li><a href="../practices/practice-07.html">Работа с цветами in Adobe Photoshop</a></li>
-                <li><a href="../practices/practice-08.html">Обработка изображений в Adobe Photoshop</a></li>
-                <li><a href="../practices/practice-09.html">Выделение частей изображения в Adobe Photoshop</a></li>
-                <li><a href="../practices/practice-10.html">Создание простых изображений в Adobe Photoshop</a></li>
-                <li><a href="../practices/practice-11.html">Выполнение манипуляций с изображениями в Adobe Photoshop</a></li>
-              </ul>
-            </li>
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Самостоятельное образование (СРС) <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../srs/srs-04.html">Изучения возможности Adobe Photoshop...</a></li>
-                <li><a href="../srs/srs-05.html">Основы работы со слоями в Adobe Photoshop...</a></li>
-                <li><a href="../srs/srs-06.html">Основы работы с текстом в Adobe Photoshop.</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html#hero" class="nav-link">Главная</a></li>
 
-        <li class="dropdown">
-          <a href="../index.html#mod-3" class="nav-link dropdown-toggle">Модуль 3 <span class="arrow">▼</span></a>
-          <ul class="dropdown-menu">
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Теория (Лекции) <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../lectures/lecture-05.html">Программа Corel Draw и ее роли...</a></li>
-                <li><a href="../lectures/lecture-06.html">Панель управления Corel Draw...</a></li>
-                <li><a href="../lectures/lecture-07.html">Работа с цветами в Corel Draw.</a></li>
-              </ul>
-            </li>
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Практические занятия <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../practices/practice-12.html" target="_blank">Знакомство с интерфейсом программы CorelDraw.</a></li>
-                <li><a href="../practices/practice-13.html">Работа с панели инструментов CorelDraw</a></li>
-                <li><a href="../practices/practice-14.html">Работа с цветами в CorelDraw</a></li>
-                <li><a href="../practices/practice-15.html">Работа с текстом в CorelDraw</a></li>
-                <li><a href="../practices/practice-16.html">Работа со слоями в CorelDraw</a></li>
-                <li><a href="../practices/practice-17.html">Изменение форматов изображений в CorelDraw</a></li>
-                <li><a href="../practices/practice-18.html">Выполнение операций импорта и экспорта объектов в CorelDraw.</a></li>
-              </ul>
-            </li>
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Самостоятельное образование (СРС) <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../srs/srs-07.html">Программа Corel Draw и ее роли в векторной графике...</a></li>
-                <li><a href="../srs/srs-08.html">Панель управления Corel Draw. Панель инструментов Corel Draw.</a></li>
-                <li><a href="../srs/srs-09.html">Работа со слоями в Corel Draw.</a></li>
-                <li><a href="../srs/srs-10.html">Подведение итог всей работы...</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+          <li class="dropdown">
+            <a href="../index.html#mod-1" class="nav-link dropdown-toggle">Модуль 1 <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Теория (Лекции) <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../lectures/lecture-01.html">Развитие и области применения КГ</a></li>
+                  <li><a href="../lectures/lecture-02.html">Виды графики и цветовые модели</a></li>
+                </ul>
+              </li>
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Практические занятия <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../practices/practice-01.html">Простые редакторы</a></li>
+                  <li><a href="../practices/practice-02.html">Создание изображений</a></li>
+                  <li><a href="../practices/practice-03.html">Научные графики</a></li>
+                  <li><a href="../practices/practice-04.html">Работа с текстом</a></li>
+                </ul>
+              </li>
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Самостоятельная работа (СРС) <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../srs/srs-01.html">Развитие и виды КГ</a></li>
+                  <li><a href="../srs/srs-02.html">Концепции графики (Презентация)</a></li>
+                  <li><a href="../srs/srs-03.html">Различия цветовых моделей</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
-        <li class="dropdown">
-          <a href="../index.html#mod-4" class="nav-link dropdown-toggle">Модуль 4 <span class="arrow">▼</span></a>
-          <ul class="dropdown-menu">
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Теория (Лекции) <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../lectures/lecture-08.html">Основные понятия Adobe Illustrator...</a></li>
-                <li><a href="../lectures/lecture-09.html">Инструменты в Adobe Illustrator...</a></li>
-                <li><a href="../lectures/lecture-10.html">Рисование в Adobe Illustrator...</a></li>
-              </ul>
-            </li>
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Практические занятия <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../practices/practice-19.html">Знакомство с интерфейсом программы Adobe Illustrator.</a></li>
-                <li><a href="../practices/practice-20.html">Работа с панели инструментов Adobe Illustrator</a></li>
-                <li><a href="../practices/practice-21.html">Функции меню программы Adobe Illustrator</a></li>
-                <li><a href="../practices/practice-22.html">Работа с геометрическими фигурами в Adobe Illustrator</a></li>
-                <li><a href="../practices/practice-23.html">Выполнение операций с использованием параметров...</a></li>
-                <li><a href="../practices/practice-24.html">Создание спецэффектов для текста в Adobe Illustrator.</a></li>
-                <li><a href="../practices/practice-25.html">Область сохранения и печати файлов в Adobe Illustrator</a></li>
-                <li><a href="../practices/practice-26.html">Способы работы с контурами в Adobe Illustrator</a></li>
-              </ul>
-            </li>
-            <li class="sub-dropdown">
-              <a href="#" class="sub-toggle">Самостоятельное образование (СРС) <span class="sub-arrow">▶</span></a>
-              <ul class="sub-dropdown-menu">
-                <li><a href="../srs/srs-11.html">Основные понятия Adobe Illustrator...</a></li>
-                <li><a href="../srs/srs-12.html">Создание спецэффектов с помощью инструментов...</a></li>
-                <li><a href="../srs/srs-13.html">Коррекция цвета и тона в Adobe Illustrator.</a></li>
-                <li><a href="../srs/srs-14.html">Работа с инструментами ретуширования...</a></li>
-                <li><a href="../srs/srs-15.html">Работа с цветами и слоями...</a></li>
-                <li><a href="../srs/srs-16.html">Рисование в Adobe Illustrator. Рисунки для различных веб-сайтов...</a></li>
-                <li><a href="../srs/srs-17.html">Работа с фильтрами in Adobe Illustrator.</a></li>
-                <li><a href="../srs/srs-18.html">Создание разнообразных логотипов...</a></li>
-                <li><a href="../srs/srs-19.html">Сохранение и экспорт изображений...</a></li>
-                <li><a href="../srs/srs-20.html">Подведение итогов всей проделанной работы...</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+          <li class="dropdown">
+            <a href="../index.html#mod-2" class="nav-link dropdown-toggle">Модуль 2 <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Теория (Лекции) <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../lectures/lecture-03.html">Графический редактор Adobe Photoshop.</a></li>
+                  <li><a href="../lectures/lecture-04.html">Основы работы с текстом и фильтры</a></li>
+                </ul>
+              </li>
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Практические занятия <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../practices/practice-05.html">Способы настройки интерфейса Adobe Photoshop</a></li>
+                  <li><a href="../practices/practice-06.html">Работа с панелью инструментов Adobe Photoshop</a></li>
+                  <li><a href="../practices/practice-07.html">Работа с цветами in Adobe Photoshop</a></li>
+                  <li><a href="../practices/practice-08.html">Обработка изображений в Adobe Photoshop</a></li>
+                  <li><a href="../practices/practice-09.html">Выделение частей изображения в Adobe Photoshop</a></li>
+                  <li><a href="../practices/practice-10.html">Создание простых изображений в Adobe Photoshop</a></li>
+                  <li><a href="../practices/practice-11.html">Выполнение манипуляций с изображениями в Adobe
+                      Photoshop</a></li>
+                </ul>
+              </li>
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Самостоятельное образование (СРС) <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../srs/srs-04.html">Изучения возможности Adobe Photoshop...</a></li>
+                  <li><a href="../srs/srs-05.html">Основы работы со слоями в Adobe Photoshop...</a></li>
+                  <li><a href="../srs/srs-06.html">Основы работы с текстом в Adobe Photoshop.</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
-    <div class="toc-overlay" id="tocOverlay"></div>
+          <li class="dropdown">
+            <a href="../index.html#mod-3" class="nav-link dropdown-toggle">Модуль 3 <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Теория (Лекции) <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../lectures/lecture-05.html">Программа Corel Draw и ее роли...</a></li>
+                  <li><a href="../lectures/lecture-06.html">Панель управления Corel Draw...</a></li>
+                  <li><a href="../lectures/lecture-07.html">Работа с цветами в Corel Draw.</a></li>
+                </ul>
+              </li>
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Практические занятия <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../practices/practice-12.html" target="_blank">Знакомство с интерфейсом программы
+                      CorelDraw.</a></li>
+                  <li><a href="../practices/practice-13.html">Работа с панели инструментов CorelDraw</a></li>
+                  <li><a href="../practices/practice-14.html">Работа с цветами в CorelDraw</a></li>
+                  <li><a href="../practices/practice-15.html">Работа с текстом в CorelDraw</a></li>
+                  <li><a href="../practices/practice-16.html">Работа со слоями в CorelDraw</a></li>
+                  <li><a href="../practices/practice-17.html">Изменение форматов изображений в CorelDraw</a></li>
+                  <li><a href="../practices/practice-18.html">Выполнение операций импорта и экспорта объектов в
+                      CorelDraw.</a></li>
+                </ul>
+              </li>
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Самостоятельное образование (СРС) <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../srs/srs-07.html">Программа Corel Draw и ее роли в векторной графике...</a></li>
+                  <li><a href="../srs/srs-08.html">Панель управления Corel Draw. Панель инструментов Corel Draw.</a>
+                  </li>
+                  <li><a href="../srs/srs-09.html">Работа со слоями в Corel Draw.</a></li>
+                  <li><a href="../srs/srs-10.html">Подведение итог всей работы...</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
-    <div class="practice-layout">
-      <main class="practice-main-content">
-
-            <div class="container">
-
-        <article class="practice-card">
-            <section id="practice-02" style="margin-top: 40px">
-              <h3>
-                Практическое задание №2. Создание простых графических
-                изображений (Paint)
-              </h3>
-              <p>
-                <strong>Тема:</strong> Композиция, силуэтная графика и
-                текстурные инструменты в растровом редакторе.
-              </p>
-
-              <h4>Учебные элементы:</h4>
-              <ul>
-                <li>
-                  <strong
-                    >Инструменты формы («Линия», «Кривая», «Овал»):</strong
-                  >
-                  построение четких геометрических контуров (парусник, солнце) и
-                  направляющих линий.
-                </li>
-                <li>
-                  <strong>Инструмент «Кисть / Распылитель»:</strong> создание
-                  рассеянного света вокруг солнца, бликов на воде и
-                  мелколиственной кроны дерева.
-                </li>
-                <li>
-                  <strong>Многоцветная заливка и силуэты:</strong> разделение
-                  холста на планы, заливка фонового градиента (неба) вручную,
-                  прорисовка темных объектов переднего плана.
-                </li>
-              </ul>
-
-              <h4>Порядок выполнения работы:</h4>
-              <p>
-                Вам необходимо создать растровый пейзаж «Закат на озере» по
-                эталонному образцу, используя послойный метод конструирования
-                (от заднего плана к переднему):
-              </p>
-
-              <div class="image-container">
-                <img
-                  src="../images/pr-2/02.png"
-                  alt="Эталонный пейзаж"
-                  style="max-width: 90%; height: auto"
-                />
-              </div>
-
-              <h4>Шаг 1: Формирование фона и линии горизонта</h4>
-              <ol>
-                <li>
-                  Задайте размер холста (рекомендуется 1000х500 пикселей).
-                </li>
-                <li>
-                  Разделите холст строго пополам горизонтальной линией — это
-                  будет граница воды и неба.
-                </li>
-                <li>
-                  Сформируйте градиент неба: проведите 2-3 горизонтальные линии
-                  в верхней части холста и залейте полосы тремя оттенками
-                  (фиолетовый, сиреневый, желтый).
-                  <ul>
-                    <li>
-                      Нижнюю часть холста (воду) залейте однотонным
-                      приглушенно-пурпурным цветом.
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-
-              <h4>Шаг 2: Отрисовка солнца и парусника (Средний план)</h4>
-              <ol>
-                <li>
-                  <strong>Солнце:</strong> С помощью инструмента «Овал» с
-                  зажатой клавишей <strong>Shift</strong> нарисуйте идеальный
-                  круг на линии горизонта. Залейте его ярко-желтым цветом.
-                </li>
-                <li>
-                  <strong>Текстурные эффекты:</strong> Выберите инструмент
-                  «Кисть» (тип: Распылитель / Аэрограф). Сделайте аккуратный
-                  полукруглый ореол белым цветом над солнцем и нанесите
-                  горизонтальные штрихи на воде под солнцем, имитируя световую
-                  дорожку.
-                </li>
-                <li>
-                  <strong>Парусник:</strong> Слева на воде постройте лодку.
-                  Используйте инструмент «Линия» для создания корпуса и
-                  треугольных парусов. Залейте паруса бежевым цветом, а корпус —
-                  черным и бежевым.
-                  <ul>
-                    <li>
-                      *Подсказка:* Чтобы линии паруса были идеально ровными,
-                      удерживайте <strong>Shift</strong>. Тонким распылителем
-                      или карандашом наметьте небольшие волны под лодкой.
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-
-              <h4>
-                Шаг 3: Прорисовка силуэтов переднего плана (Темный силуэт)
-              </h4>
-              <ol>
-                <li>
-                  Переключите основной цвет на черный (или темно-коричневый).
-                  Все объекты переднего плана должны быть силуэтными (без
-                  внутренних деталей).
-                </li>
-                <li>
-                  <strong>Дерево:</strong> Справа нарисуйте ствол и ветви дерева
-                  с помощью кисти или инструмента «Кривая». Сделайте их более
-                  толстыми у основания.
-                </li>
-                <li>
-                  <strong>Листва:</strong> Возьмите инструмент «Распылитель»
-                  (выберите средний или крупный размер кисти) и короткими
-                  кликами сформируйте пушистую крону дерева вокруг веток.
-                </li>
-                <li>
-                  <strong>Мостик и камыши:</strong> В центре нижней части холста
-                  нарисуйте прямоугольные опоры и настил мостика. По бокам от
-                  него аккуратными свободными мазками кисти («Каллиграфическая
-                  кисть» или обычная кисть со скошенным краем) нарисуйте силуэты
-                  травы и камышей.
-                </li>
-              </ol>
-
-              <div class="checklist">
-                <h4>Критерии технического контроля (Чек-лист):</h4>
-                <label
-                  ><input type="checkbox" /> Герметичность линий (отсутствие
-                  протекания цвета при заливке неба и лодки).</label
-                ><br />
-                <label
-                  ><input type="checkbox" /> Текстурность (правильное
-                  использование распылителя для кроны дерева и бликов на
-                  воде).</label
-                ><br />
-                <label
-                  ><input type="checkbox" /> Разделение планов (четкий контраст
-                  между ярким фоном и темными силуэтами переднего плана).</label
-                ><br />
-                <label
-                  ><input type="checkbox" /> Сохранение работы в формате
-                  PNG.</label
-                >
-              </div>
-            </section>
-          </article>
-</div>
-      </main>
+          <li class="dropdown">
+            <a href="../index.html#mod-4" class="nav-link dropdown-toggle">Модуль 4 <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Теория (Лекции) <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../lectures/lecture-08.html">Основные понятия Adobe Illustrator...</a></li>
+                  <li><a href="../lectures/lecture-09.html">Инструменты в Adobe Illustrator...</a></li>
+                  <li><a href="../lectures/lecture-10.html">Рисование в Adobe Illustrator...</a></li>
+                </ul>
+              </li>
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Практические занятия <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../practices/practice-19.html">Знакомство с интерфейсом программы Adobe Illustrator.</a>
+                  </li>
+                  <li><a href="../practices/practice-20.html">Работа с панели инструментов Adobe Illustrator</a></li>
+                  <li><a href="../practices/practice-21.html">Функции меню программы Adobe Illustrator</a></li>
+                  <li><a href="../practices/practice-22.html">Работа с геометрическими фигурами в Adobe Illustrator</a>
+                  </li>
+                  <li><a href="../practices/practice-23.html">Выполнение операций с использованием параметров...</a>
+                  </li>
+                  <li><a href="../practices/practice-24.html">Создание спецэффектов для текста в Adobe Illustrator.</a>
+                  </li>
+                  <li><a href="../practices/practice-25.html">Область сохранения и печати файлов в Adobe Illustrator</a>
+                  </li>
+                  <li><a href="../practices/practice-26.html">Способы работы с контурами в Adobe Illustrator</a></li>
+                </ul>
+              </li>
+              <li class="sub-dropdown">
+                <a href="#" class="sub-toggle">Самостоятельное образование (СРС) <span class="sub-arrow">▶</span></a>
+                <ul class="sub-dropdown-menu">
+                  <li><a href="../srs/srs-11.html">Основные понятия Adobe Illustrator...</a></li>
+                  <li><a href="../srs/srs-12.html">Создание спецэффектов с помощью инструментов...</a></li>
+                  <li><a href="../srs/srs-13.html">Коррекция цвета и тона в Adobe Illustrator.</a></li>
+                  <li><a href="../srs/srs-14.html">Работа с инструментами ретуширования...</a></li>
+                  <li><a href="../srs/srs-15.html">Работа с цветами и слоями...</a></li>
+                  <li><a href="../srs/srs-16.html">Рисование в Adobe Illustrator. Рисунки для различных
+                      веб-сайтов...</a></li>
+                  <li><a href="../srs/srs-17.html">Работа с фильтрами in Adobe Illustrator.</a></li>
+                  <li><a href="../srs/srs-18.html">Создание разнообразных логотипов...</a></li>
+                  <li><a href="../srs/srs-19.html">Сохранение и экспорт изображений...</a></li>
+                  <li><a href="../srs/srs-20.html">Подведение итогов всей проделанной работы...</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </header>
+  
+  <div class="practice-layout">
+    <main class="practice-main-content">
+      <div class="container">
+        <article class="practice-card">
+          <section id="practice-02" style="margin-top: 40px">
+            <h3>
+              Практическое задание №2. Создание простых графических
+              изображений (Paint)
+            </h3>
+            <p>
+              <strong>Тема:</strong> Композиция, силуэтная графика и
+              текстурные инструменты в растровом редакторе.
+            </p>
 
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        const toc = document.getElementById("lectureToc");
-        const toggleBtn = document.getElementById("tocToggleBtn");
-        const closeBtn = document.getElementById("closeTocBtn");
-        const overlay = document.getElementById("tocOverlay");
+            <h4>Учебные элементы:</h4>
+            <ul>
+              <li>
+                <strong>Инструменты формы («Линия», «Кривая», «Овал»):</strong>
+                построение четких геометрических контуров (парусник, солнце) и
+                направляющих линий.
+              </li>
+              <li>
+                <strong>Инструмент «Кисть / Распылитель»:</strong> создание
+                рассеянного света вокруг солнца, бликов на воде и
+                мелколиственной кроны дерева.
+              </li>
+              <li>
+                <strong>Многоцветная заливка и силуэты:</strong> разделение
+                холста на планы, заливка фонового градиента (неба) вручную,
+                прорисовка темных объектов переднего плана.
+              </li>
+            </ul>
 
-        function openMobileToc() {
-          if (toc && overlay) {
-            toc.classList.add("open");
-            overlay.classList.add("active");
-            document.body.style.overflow = "hidden";
-          }
+            <h4>Порядок выполнения работы:</h4>
+            <p>
+              Вам необходимо создать растровый пейзаж «Закат на озере» по
+              эталонному образцу, используя послойный метод конструирования
+              (от заднего плана к переднему):
+            </p>
+
+            <div class="image-container">
+              <img src="../images/pr-2/02.png" alt="Эталонный пейзаж" style="max-width: 90%; height: auto" />
+            </div>
+
+            <h4>Шаг 1: Формирование фона и линии горизонта</h4>
+            <ol>
+              <li>
+                Задайте размер холста (рекомендуется 1000х500 пикселей).
+              </li>
+              <li>
+                Разделите холст строго пополам горизонтальной линией — это
+                будет граница воды и неба.
+              </li>
+              <li>
+                Сформируйте градиент неба: проведите 2-3 горизонтальные линии
+                в верхней части холста и залейте полосы тремя оттенками
+                (фиолетовый, сиреневый, желтый).
+                <ul>
+                  <li>
+                    Нижнюю часть холста (воду) залейте однотонным
+                    приглушенно-пурпурным цветом.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+
+            <h4>Шаг 2: Отрисовка солнца и парусника (Средний план)</h4>
+            <ol>
+              <li>
+                <strong>Солнце:</strong> С помощью инструмента «Овал» с
+                зажатой клавишей <strong>Shift</strong> нарисуйте идеальный
+                круг на линии горизонта. Залейте его ярко-желтым цветом.
+              </li>
+              <li>
+                <strong>Текстурные эффекты:</strong> Выберите инструмент
+                «Кисть» (тип: Распылитель / Аэрограф). Сделайте аккуратный
+                полукруглый ореол белым цветом над солнцем и нанесите
+                горизонтальные штрихи на воде под солнцем, имитируя световую
+                дорожку.
+              </li>
+              <li>
+                <strong>Парусник:</strong> Слева на воде постройте лодку.
+                Используйте инструмент «Линия» для создания корпуса и
+                треугольных парусов. Залейте паруса бежевым цветом, а корпус —
+                черным и бежевым.
+                <ul>
+                  <li>
+                    *Подсказка:* Чтобы линии паруса были идеально ровными,
+                    удерживайте <strong>Shift</strong>. Тонким распылителем
+                    или карандашом наметьте небольшие волны под лодкой.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+
+            <h4>
+              Шаг 3: Прорисовка силуэтов переднего плана (Темный силуэт)
+            </h4>
+            <ol>
+              <li>
+                Переключите основной цвет на черный (или темно-коричневый).
+                Все объекты переднего плана должны быть силуэтными (без
+                внутренних деталей).
+              </li>
+              <li>
+                <strong>Дерево:</strong> Справа нарисуйте ствол и ветви дерева
+                с помощью кисти или инструмента «Кривая». Сделайте их более
+                толстыми у основания.
+              </li>
+              <li>
+                <strong>Листва:</strong> Возьмите инструмент «Распылитель»
+                (выберите средний или крупный размер кисти) и короткими
+                кликами сформируйте пушистую крону дерева вокруг веток.
+              </li>
+              <li>
+                <strong>Мостик и камыши:</strong> В центре нижней части холста
+                нарисуйте прямоугольные опоры и настил мостика. По бокам от
+                него аккуратными свободными мазками кисти («Каллиграфическая
+                кисть» или обычная кисть со скошенным краем) нарисуйте силуэты
+                травы и камышей.
+              </li>
+            </ol>
+
+            <div class="checklist">
+              <h4>Критерии технического контроля (Чек-лист):</h4>
+              <label><input type="checkbox" /> Герметичность линий (отсутствие
+                протекания цвета при заливке неба и лодки).</label><br />
+              <label><input type="checkbox" /> Текстурность (правильное
+                использование распылителя для кроны дерева и бликов на
+                воде).</label><br />
+              <label><input type="checkbox" /> Разделение планов (четкий контраст
+                между ярким фоном и темными силуэтами переднего плана).</label><br />
+              <label><input type="checkbox" /> Сохранение работы в формате
+                PNG.</label>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const toc = document.getElementById("lectureToc");
+      const toggleBtn = document.getElementById("tocToggleBtn");
+      const closeBtn = document.getElementById("closeTocBtn");
+      const overlay = document.getElementById("tocOverlay");
+
+      function openMobileToc() {
+        if (toc && overlay) {
+          toc.classList.add("open");
+          overlay.classList.add("active");
+          document.body.style.overflow = "hidden";
         }
+      }
 
-        function closeMobileToc() {
-          if (toc && overlay) {
-            toc.classList.remove("open");
-            overlay.classList.remove("active");
-            document.body.style.overflow = "";
-          }
+      function closeMobileToc() {
+        if (toc && overlay) {
+          toc.classList.remove("open");
+          overlay.classList.remove("active");
+          document.body.style.overflow = "";
         }
+      }
 
-        // Безопасное назначение событий (защита от краша, если кнопок нет на странице)
-        if (toggleBtn) toggleBtn.addEventListener("click", openMobileToc);
-        if (closeBtn) closeBtn.addEventListener("click", closeMobileToc);
-        if (overlay) overlay.addEventListener("click", closeMobileToc);
+      // Безопасное назначение событий (защита от краша, если кнопок нет на странице)
+      if (toggleBtn) toggleBtn.addEventListener("click", openMobileToc);
+      if (closeBtn) closeBtn.addEventListener("click", closeMobileToc);
+      if (overlay) overlay.addEventListener("click", closeMobileToc);
 
-        document.querySelectorAll(".toc-link").forEach((link) => {
-          link.addEventListener("click", closeMobileToc);
-        });
-
-        // Умный Scrollspy (адаптирован под секции заданий)
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              const id = entry.target.getAttribute("id");
-              const tocLink = document.querySelector(
-                `.toc-link[href="#${id}"]`,
-              );
-
-              if (entry.intersectionRatio > 0) {
-                document
-                  .querySelectorAll(".toc-link")
-                  .forEach((link) => link.classList.remove("active"));
-                if (tocLink) tocLink.classList.add("active");
-              }
-            });
-          },
-          { rootMargin: "-40px 0px -60% 0px" },
-        );
-
-        // Следим за секциями с ID (например, #practice-01)
-        document.querySelectorAll("section[id]").forEach((section) => {
-          observer.observe(section);
-        });
+      document.querySelectorAll(".toc-link").forEach((link) => {
+        link.addEventListener("click", closeMobileToc);
       });
-    </script>
 
-    <script>
-      document.addEventListener("contextmenu", (e) => e.preventDefault());
-      document.addEventListener("keydown", function (e) {
-        // Защита от Ctrl+C, Ctrl+V, Ctrl+U (исходный код), Ctrl+S (сохранение) и F12
-        if (
-          e.ctrlKey &&
-          (e.key === "c" ||
-            e.key === "v" ||
-            e.key === "u" ||
-            e.key === "s" ||
-            e.keyCode === 67 ||
-            e.keyCode === 86 ||
-            e.keyCode === 85 ||
-            e.keyCode === 83)
-        ) {
-          e.preventDefault();
-        }
-        if (e.keyCode === 123 || e.key === "F12") e.preventDefault();
-      });
-    </script>
+      // Умный Scrollspy (адаптирован под секции заданий)
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const id = entry.target.getAttribute("id");
+            const tocLink = document.querySelector(
+              `.toc-link[href="#${id}"]`,
+            );
 
-    <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const subDropdowns = document.querySelectorAll('.sub-dropdown');
-
-    subDropdowns.forEach(dropdown => {
-        dropdown.addEventListener('mouseenter', function () {
-            const menu = this.querySelector('.sub-dropdown-menu');
-            if (!menu) return;
-
-            // Сначала сбрасываем класс, чтобы сделать честный замер вправо
-            menu.classList.remove('open-left');
-
-            // Получаем координаты подменю на экране
-            const rect = menu.getBoundingClientRect();
-            const windowWidth = window.innerWidth;
-
-            // Если правый край меню уходит за ширину экрана, разворачиваем его влево
-            if (rect.right > windowWidth) {
-                menu.classList.add('open-left');
+            if (entry.intersectionRatio > 0) {
+              document
+                .querySelectorAll(".toc-link")
+                .forEach((link) => link.classList.remove("active"));
+              if (tocLink) tocLink.classList.add("active");
             }
-        });
+          });
+        },
+        { rootMargin: "-40px 0px -60% 0px" },
+      );
+
+      // Следим за секциями с ID (например, #practice-01)
+      document.querySelectorAll("section[id]").forEach((section) => {
+        observer.observe(section);
+      });
     });
-});
-</script>
-  </body>
+  </script>
+
+  <script>
+    document.addEventListener("contextmenu", (e) => e.preventDefault());
+    document.addEventListener("keydown", function (e) {
+      // Защита от Ctrl+C, Ctrl+V, Ctrl+U (исходный код), Ctrl+S (сохранение) и F12
+      if (
+        e.ctrlKey &&
+        (e.key === "c" ||
+          e.key === "v" ||
+          e.key === "u" ||
+          e.key === "s" ||
+          e.keyCode === 67 ||
+          e.keyCode === 86 ||
+          e.keyCode === 85 ||
+          e.keyCode === 83)
+      ) {
+        e.preventDefault();
+      }
+      if (e.keyCode === 123 || e.key === "F12") e.preventDefault();
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const subDropdowns = document.querySelectorAll('.sub-dropdown');
+
+      subDropdowns.forEach(dropdown => {
+        dropdown.addEventListener('mouseenter', function () {
+          const menu = this.querySelector('.sub-dropdown-menu');
+          if (!menu) return;
+
+          // Сначала сбрасываем класс, чтобы сделать честный замер вправо
+          menu.classList.remove('open-left');
+
+          // Получаем координаты подменю на экране
+          const rect = menu.getBoundingClientRect();
+          const windowWidth = window.innerWidth;
+
+          // Если правый край меню уходит за ширину экрана, разворачиваем его влево
+          if (rect.right > windowWidth) {
+            menu.classList.add('open-left');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
 </html>
